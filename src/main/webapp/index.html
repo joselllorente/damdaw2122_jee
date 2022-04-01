@@ -8,13 +8,25 @@
 <h1>HOLA CON CAMBIO</h1>
 <a href="http://localhost:8080/PrimerServidor/test?parametro1=valor1&parametro2=valor2" >Prueba Servlet</a>
  
-<a href="http://localhost:8080/PrimerServidor/calculaedad?edad=20&ciudad=Madrid" >CalculaEdad</a>
+<a href="http://localhost:8080/PrimerServidor/calculaedad?edad=20&ciudad=Madrid">CalculaEdad</a>
  
- 
-<form action="http://localhost:8080/PrimerServidor/test2" method="post">
-	<input type="text" value="Valor" name="nombre"/>
+<!-- <a href="formulario.html" >CalculaEdad</a> -->
+
+<form action="http://192.168.161.66:8080/PrimerServidor/altausuario" method="post">
+	<input type="text" value="" name="nombre"/><br>
+	<input type="text" value="" name="usuario"/><br>
+	<input type="password" value="" name="contrasenia"/><br>
+	<select name="ciudad">
+		<option value="">Seleccione una opción</option>
+		<option value="M">Madrid</option>
+		<option value="B">Barcelna</option>
+		<option value="V">Valencia</option>
+		<option value="S">Sevilla</option>
+	</select>
+
 
 	<input type="submit" value="Enviar"/>	
-</form> 
+</form>
+
 </body>
 </html>
